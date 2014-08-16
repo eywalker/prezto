@@ -32,7 +32,8 @@ if [[ -z "$TMUX" && -z "$EMACS" && -z "$VIM" ]] && ( \
   fi
 
   # Attach to the 'prezto' session or to the last session used.
-  exec tmux attach-session
+  # Run tmux on top of a terminal
+  tmux attach-session
 fi
 
 #
