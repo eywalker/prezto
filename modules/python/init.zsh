@@ -38,6 +38,7 @@ fi
 if (( $+commands[virtualenvwrapper_lazy.sh] )); then
   # Set the directory where virtual environments are stored.
   export WORKON_HOME="$HOME/.virtualenvs"
+  export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
   # enable virtualenv propmt
   unset VIRTUAL_ENV_DISABLE_PROMPT
@@ -45,9 +46,4 @@ if (( $+commands[virtualenvwrapper_lazy.sh] )); then
   source "$commands[virtualenvwrapper_lazy.sh]"
 fi
 
-#
-# Aliases
-#
-
-alias py='python'
 
